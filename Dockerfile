@@ -14,7 +14,7 @@ RUN wget https://github.com/alexdobin/STAR/archive/2.7.8a.tar.gz && \
     cp -R ./* /usr/local/bin/
     
 # SAMTOOLS
-RUN wget https://github.com/samtools/samtools/releases/download/1.12/samtools-1.12.tar.bz2 && ls && \
+RUN wget https://github.com/samtools/samtools/releases/download/1.12/samtools-1.12.tar.bz2 && \
     tar -xvf samtools-1.12.tar.bz2 && cd samtools-1.12 && \
     ./configure && make -j 2 && make install
     
